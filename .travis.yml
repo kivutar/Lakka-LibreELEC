@@ -6,7 +6,7 @@ cache:
     - sources
     - build.Lakka-*
 env:
-  - DISTRO=Lakka PROJECT=Generic ARCH=x86_64
+  - MAKEFLAGS="-j2" DISTRO=Lakka PROJECT=Generic ARCH=x86_64
 before_install:
   - sudo rm /var/lib/dpkg/lock
   - sudo apt-get -qq update
