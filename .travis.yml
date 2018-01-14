@@ -13,4 +13,4 @@ before_install:
 install:
   - sudo apt-get install -y wget bash bc gcc sed patch patchutils tar bzip2 gzip perl gawk gperf zip unzip diffutils texinfo lzop libc6-dev libncurses5-dev g++ xfonts-utils xfonts-utils xfonts-utils xsltproc libjson-perl
 script:
-  - timeout 1800 make image > /dev/null || true
+  - timeout 600 make image > /dev/null || true
