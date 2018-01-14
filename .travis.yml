@@ -3,8 +3,8 @@ sudo: required
 dist: xenial
 cache:
   directories:
-    - sources
-    - build.Lakka-*
+    - /home/travis/build/libretro/Lakka-LibreELEC/sources
+    - /home/travis/build/libretro/Lakka-LibreELEC/build.Lakka-Generic.x86_64-2.1-devel
 env:
   - MAKEFLAGS="-j2" DISTRO=Lakka PROJECT=Generic ARCH=x86_64
 before_install:
